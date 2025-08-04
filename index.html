@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDx Event 2025 - Ideas Worth Spreading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-container">
+            <div class="splash-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="tedx-logo">
+                            <img src="images.jpeg" alt="TEDx Logo">
+                        </div>
+                        <h1>TEDx <span>2025</span></h1>
+                        <div class="theme">Breaking Barriers</div>
+                        <div class="loading-indicator">
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles-container" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images.jpeg" alt="TEDx Logo">
+                <h1>Event</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3>TEDx Annual Conference</h3>
+                <p class="tagline">Ideas Worth Spreading</p>
+                <div class="event-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>Date</h3>
+                            <p>November 15, 2025</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Time</h3>
+                            <p>9:00 AM - 6:00 PM (IST)</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Venue</h3>
+                            <p>Grand Convention Center, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="countdown">
+                    <h3>Event Starts In</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span>TEDx</span></h2>
+                <p>Bringing together innovators, thinkers, and doers to share ideas that matter</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection.</p>
+                    <p>Our event brings together leading thinkers and doers to share ideas that matter in a wide range of fields — science, business, the arts, global issues, and more.</p>
+                    <p>Join us for a day of inspiring talks, networking opportunities, and thought-provoking discussions that will challenge your perspective and ignite new ideas.</p>
+                    <div class="theme-box">
+                        <h3>This Year's Theme</h3>
+                        <p class="theme-title">Breaking Barriers</p>
+                        <p>Exploring how innovative ideas and technologies are breaking down traditional barriers and creating new possibilities for humanity.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="TEDx Event">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured <span>Speakers</span></h2>
+                <p>Meet the thought leaders who will inspire you at TEDx 2025</p>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Speaker">
+                        <div class="speaker-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p>Neuroscientist & Author</p>
+                        <p class="speaker-topic">"The Future of Human Cognition"</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Speaker">
+                        <div class="speaker-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Michael Chen</h3>
+                        <p>Tech Entrepreneur</p>
+                        <p class="speaker-topic">"Building the Next Generation of AI"</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Speaker">
+                        <div class="speaker-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Aisha Williams</h3>
+                        <p>Climate Activist</p>
+                        <p class="speaker-topic">"Building a Sustainable Future Together"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event <span>Schedule</span></h2>
+                <p>A day packed with inspiring talks and activities</p>
+            </div>
+            <div class="schedule-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="day1">Day 1</button>
+                    <button class="tab-btn" data-tab="day2">Day 2</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="day1">
+                        <div class="schedule-container">
+                            <div class="schedule-item">
+                                <div class="time">9:00 AM</div>
+                                <div class="details">
+                                    <h3>Registration & Welcome Coffee</h3>
+                                    <p>Check-in and network with other attendees</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">10:00 AM</div>
+                                <div class="details">
+                                    <h3>Opening Keynote</h3>
+                                    <p>Dr. Sarah Johnson: "The Future of Human Cognition"</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">11:30 AM</div>
+                                <div class="details">
+                                    <h3>Tech Innovation Panel</h3>
+                                    <p>Michael Chen and David Rodriguez discuss emerging technologies</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">1:00 PM</div>
+                                <div class="details">
+                                    <h3>Lunch & Networking</h3>
+                                    <p>Connect with speakers and fellow attendees</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">2:30 PM</div>
+                                <div class="details">
+                                    <h3>Climate Action Talk</h3>
+                                    <p>Aisha Williams: "Building a Sustainable Future Together"</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">4:00 PM</div>
+                                <div class="details">
+                                    <h3>Interactive Workshops</h3>
+                                    <p>Hands-on sessions with our speakers</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">5:30 PM</div>
+                                <div class="details">
+                                    <h3>Closing Remarks & Networking</h3>
+                                    <p>Wrap up and continue the conversations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="day2">
+                        <div class="schedule-container">
+                            <div class="schedule-item">
+                                <div class="time">9:30 AM</div>
+                                <div class="details">
+                                    <h3>Day 2 Welcome</h3>
+                                    <p>Recap of Day 1 and introduction to Day 2</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">10:30 AM</div>
+                                <div class="details">
+                                    <h3>Keynote: Future of Education</h3>
+                                    <p>Dr. James Wilson: "Reimagining Learning for the 21st Century"</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">12:00 PM</div>
+                                <div class="details">
+                                    <h3>Lunch Break</h3>
+                                    <p>Networking lunch with themed discussion tables</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">1:30 PM</div>
+                                <div class="details">
+                                    <h3>Panel: Entrepreneurship in a Changing World</h3>
+                                    <p>Industry leaders discuss adapting to global challenges</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">3:00 PM</div>
+                                <div class="details">
+                                    <h3>TEDx Talks Session</h3>
+                                    <p>Short, powerful talks from selected community members</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="time">4:30 PM</div>
+                                <div class="details">
+                                    <h3>Closing Ceremony</h3>
+                                    <p>Reflections, awards, and final networking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our <span>Sponsors</span></h2>
+                <p>Thank you to our partners who make this event possible</p>
+            </div>
+            <div class="sponsors-container">
+                <div class="sponsor-tier">
+                    <h3>Platinum Sponsors</h3>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-logo">
+                            <a href="https://about.google" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google">
+                            </a>
+                        </div>
+                        <div class="sponsor-logo">
+                            <a href="https://www.amazon.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png" alt="Amazon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor-tier">
+                    <h3>Gold Sponsors</h3>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-logo">
+                            <a href="https://www.ibm.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" alt="IBM">
+                            </a>
+                        </div>
+                        <div class="sponsor-logo">
+                            <a href="https://about.meta.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor-tier">
+                    <h3>Silver Sponsors</h3>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-logo">
+                            <a href="https://twitter.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="Twitter">
+                            </a>
+                        </div>
+                        <div class="sponsor-logo">
+                            <a href="https://www.netflix.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1200px-Logonetflix.png" alt="Netflix">
+                            </a>
+                        </div>
+                        <div class="sponsor-logo">
+                            <a href="https://www.salesforce.com" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/1200px-Salesforce.com_logo.svg.png" alt="Salesforce">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What People <span>Say</span></h2>
+                <p>Feedback from previous TEDx events</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"TEDx was a transformative experience. The speakers were inspiring and the connections I made have been invaluable to my career."</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Testimonial">
+                        <div>
+                            <h4>Emma Thompson</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The ideas shared at TEDx challenged my perspective and opened my mind to new possibilities. I can't wait for this year's event!"</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Testimonial">
+                        <div>
+                            <h4>James Wilson</h4>
+                            <p>Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The energy at TEDx is electric. Being surrounded by so many passionate people sharing innovative ideas is truly motivating."</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Testimonial">
+                        <div>
+                            <h4>Sophia Garcia</h4>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <span>Us</span></h2>
+                <p>Have questions? Reach out to our team</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@tedxevent2025.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Venue</h3>
+                            <p>Grand Convention Center, Nehru Road, New Delhi</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images.jpeg" alt="TEDx Logo">
+                    <p>TEDx Event 2025</p>
+                    <p class="theme-text">Breaking Barriers</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest updates about TEDx 2025</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TEDx Event. All rights reserved. This independent TEDx event is operated under license from TED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
