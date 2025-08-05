@@ -1,3 +1,78 @@
+// Custom Cursor
+document.addEventListener('DOMContentLoaded', () => {
+    // Only apply custom cursor on screens larger than 768px
+    if (window.innerWidth > 768) {
+        // Create custom cursor elements
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        
+        const cursorDot = document.createElement('div');
+        cursorDot.className = 'cursor-dot';
+        
+        const cursorOutline = document.createElement('div');
+        cursorOutline.className = 'cursor-outline';
+        
+        cursor.appendChild(cursorDot);
+        cursor.appendChild(cursorOutline);
+        document.body.appendChild(cursor);
+        
+        // Mouse move event
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        
+        // Mouse down event
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('hover');
+        });
+        
+        // Mouse up event
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('hover');
+        });
+        
+        // Hover effects for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .register-btn, .nav-links a, .social-links a, .tab-btn, .testimonial-controls button, .submit-btn');
+        
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        });
+        
+        // Hide cursor when mouse leaves the window
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = '0';
+        });
+        
+        // Show cursor when mouse enters the window
+        document.addEventListener('mouseover', () => {
+            cursor.style.opacity = '1';
+        });
+    }
+    
+    // Handle window resize to show/hide custom cursor based on screen size
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            const customCursor = document.querySelector('.custom-cursor');
+            if (window.innerWidth > 768 && !customCursor) {
+                // If screen is larger than 768px and custom cursor doesn't exist, create it
+                location.reload(); // Simple way to reinitialize the cursor
+            } else if (window.innerWidth <= 768 && customCursor) {
+                // If screen is 768px or smaller and custom cursor exists, remove it
+                customCursor.remove();
+            }
+        }, 250);
+    });
+});
+
 // Splash Screen
 window.addEventListener('load', () => {
     const splashScreen = document.getElementById('splash-screen');
